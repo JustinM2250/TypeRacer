@@ -10,7 +10,6 @@ Script for screenshotting text and typing it back by pressing selected key
 TYPE_DELAY = 0.01
 SELECTED_KEY = Key.caps_lock
 
-
 def on_click(x, y, button, pressed):
     if pressed:
         on_click.px = x
