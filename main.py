@@ -7,6 +7,7 @@ import time
 '''
 Script for screenshotting text and typing it back by pressing selected key
 '''
+PROGRAM_DELAY = 3
 TYPE_DELAY = 0.01
 SELECTED_KEY = Key.caps_lock
 
@@ -28,7 +29,7 @@ def on_press(key):
             time.sleep(TYPE_DELAY)
 
 if __name__ == "__main__":
-    time.sleep(3) # Give time to screenshot
+    time.sleep(PROGRAM_DELAY) # Give time to screenshot
 
     with mouse.Listener(on_click=on_click) as listener:
         listener.join()
